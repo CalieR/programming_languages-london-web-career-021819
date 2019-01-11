@@ -7,6 +7,7 @@ def reformat_languages(languages)
   styles_arr = []
 
   languages.each do |styles, langs|
+    binding.pry
     styles_arr << languages.key(langs)
     langs.each do |lang, types|
       types.each do |a,b|
