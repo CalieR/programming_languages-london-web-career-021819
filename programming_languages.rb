@@ -4,14 +4,11 @@ def reformat_languages(languages)
   # build a new hash with the languages as keys
   # values are type and style
   new_hash = {}
-  styles_arr = []
 
   languages.each do |styles, langs|
-    binding.pry
-    # styles_arr << languages.key(langs)
     langs.each do |lang, types|
       types.each do |a,b|
-      new_hash[lang] = {type: b, style: styles_arr}
+      new_hash[lang] = {type: b, style: [styles]}
       end
     end
   end
