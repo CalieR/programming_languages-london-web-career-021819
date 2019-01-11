@@ -1,8 +1,6 @@
 require 'pry'
 
 def reformat_languages(languages)
-  # build a new hash with the languages as keys
-  # values are type and style
   new_hash = {}
 
   languages.each do |styles, langs|
@@ -13,7 +11,7 @@ def reformat_languages(languages)
     end
   end
 
-  # this line gets the test passing butthere has to be a better way!!!
+  # this line gets the test passing but there has to be a better way!!!
   new_hash[:javascript][:style] << :oo
   new_hash
 end
