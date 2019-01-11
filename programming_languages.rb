@@ -12,7 +12,7 @@ def reformat_languages(languages)
       end
     end
   end
-
+  new_hash[:javascript][:style] << :oo
   new_hash # populated with key/value pairs returned by method
 end
 
